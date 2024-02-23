@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SampleApp">
+        <activity android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".fullScreen.FullScreenActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.SampleApp.ScanView"
+            android:exported="false"/>
+
+        <activity android:name=".splitScreen.SplitScreenActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.SampleApp.ScanView"
+            android:exported="false"/>
+
+        <activity android:name=".multiScan.MultiScanActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.SampleApp.ScanView"
+            android:exported="false"/>
+
+        <activity
+            android:name=".putSettings.PutSettingsMainActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.SampleApp.ScanView" />
+
+        <activity
+            android:name=".putSettings.SettingsActivity" />
+
+    </application>
+
+</manifest>

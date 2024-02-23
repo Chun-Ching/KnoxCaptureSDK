@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Thinking Knox Capture</string>
+    <string name="menu_settings">設定配置</string>
+    <string name="button_view_scan_result">查看結果</string>
+    <string name="button_scan_again">重新掃描</string>
+</resources>

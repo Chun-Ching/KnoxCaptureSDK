@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.SampleApp" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSurface">#F44336</item>
+        <item name="android:textColorSecondary">#F44336</item>
+        <item name="actionBarTheme">@style/Theme.SampleApp.ActionBarTheme</item>
+        <item name="alertDialogTheme">@style/Theme.SampleApp.AlertDialogTheme</item>
+    </style>
+
+    <style name="Theme.SampleApp.ScanView" parent="Theme.SampleApp">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorSurface">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="Theme.SampleApp.ActionBarTheme" parent="Widget.Material3.ActionBar.Solid">
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="Theme.SampleApp.MainMenuStyle" >
+        <item name="android:drawablePadding">13dp</item>
+        <item name="android:padding">22dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.SampleApp.AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="dialogCornerRadius">20dp</item>
+        <item name="colorControlActivated">#F44336</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorOnSurfaceVariant">@color/colorControlNormal</item>
+        <item name="android:textColorSecondary">@color/colorControlNormal</item>
+    </style>
+
+    <!-- START Transparent system bar -->
+    <style name="Theme.SampleApp.TransparentSystemBar.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSurface">#F44336</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <!-- transparent system bar -->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+
+        <!-- tool bar arrow icon color -->
+        <item name="toolbarNavigationButtonStyle">@style/Widget.SampleApp.Toolbar.Navigation.White</item>
+    </style>
+
+    <style name="Widget.SampleApp.Toolbar.Navigation.White" parent="Widget.AppCompat.Toolbar.Button.Navigation" >
+        <item name="android:tint">@color/colorTertiary</item>
+    </style>
+    <!-- END Transparent system  bar -->
+
+</resources>

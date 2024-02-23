@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <MultiSelectListPreference
+        android:key="symbologies"
+        android:title="條碼類型"
+        android:dialogTitle="條碼類型"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
+
+    <ListPreference
+        android:key="zoom_factor"
+        android:title="放大倍率"
+        android:dialogTitle="放大倍率"
+        app:useSimpleSummaryProvider="true"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
+
+    <DropDownPreference
+        android:key="focus_mode"
+        android:title="對焦模式"
+        app:useSimpleSummaryProvider="true"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreference
+        android:key="beep"
+        android:title="提示音"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreference
+        android:key="vibrator"
+        android:title="震動"
+        app:allowDividerAbove="true"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceCategory
+        android:title="取景"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:key="viewfinder"
+            android:title="取景選擇"
+            android:dialogTitle="Viewfinder selection"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:key="rectangular_width"
+            android:title="取景寬度"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Viewfinder width"
+            android:dialogMessage="Enter the value as a percentage. For example, enter “50” for a value of 50%."
+            android:defaultValue="90"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="rectangular_height"
+            android:title="取景高度"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Viewfinder height"
+            android:dialogMessage="Enter the value as a percentage. For example, enter “50” for a value of 50%. It adjusts only RECTANGLE among Viewfinder"
+            android:defaultValue="40"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="鏡頭方向"
+        app:iconSpaceReserved="false">
+        <DropDownPreference
+            android:key="camera_facing_anchor"
+            android:title="鏡頭方向按鈕"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:key="camera_facing_margin_x"
+            android:title="Margin x"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Camera Facing Button margin x"
+            android:dialogMessage="Enter the value as a DIP"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="camera_facing_margin_y"
+            android:title="Margin y"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Camera Facing Button margin y"
+            android:dialogMessage="Enter the value as a DIP"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="閃光燈"
+        app:iconSpaceReserved="false">
+        <DropDownPreference
+            android:key="flashlight_anchor"
+            android:title="閃光燈按鈕"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:key="flashlight_margin_x"
+            android:title="Margin x"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Flash Light Button margin x"
+            android:dialogMessage="Enter the value as a DIP"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="flashlight_margin_y"
+            android:title="Margin y"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Flash Light Button margin y"
+            android:dialogMessage="Enter the value as a DIP"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Logo"
+        app:iconSpaceReserved="false">
+        <DropDownPreference
+            android:key="logo_anchor"
+            android:title="Logo Anchor"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:key="logo_offset_x"
+            android:title="Offset x"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Logo offset x"
+            android:dialogMessage="Enter the value as a DIP"
+            android:defaultValue="0"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:key="logo_offset_y"
+            android:title="Offset y"
+            android:dialogLayout="@layout/dialog_edittext_with_description"
+            android:dialogTitle="Logo offset y"
+            android:dialogMessage="Enter the value as a DIP"
+            android:defaultValue="0"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
